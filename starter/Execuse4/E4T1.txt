@@ -1,0 +1,9 @@
+
+
+# Identify 2-3 changes that can be made to our environment to prevent an ssh brute force attack from the internet.
+- Assignment ssh permission to specific users
+- Open only necessary ports and restrict network traffic that can reach the application server. deny all unnecessary ports.
+
+# Neither instance should have had access to the secret recipes bucket, in the even that instance API credentials were compromised how could we have prevented access to sensitive data.
+- Configure the Security Group to allow SSH (port 22) connections only from known, safe IP addresses or within the security group.
+- Decentralized webserver can only read from free bukket

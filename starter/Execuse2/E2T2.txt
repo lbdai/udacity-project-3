@@ -1,0 +1,14 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+
+Bonus - provide recommendations on how to remediate the vulnerabilities.
+1. Server-side encryption and logging not enabled for buckets
+ remediate the vulnerability:  update the bucket policy to enforce encryption. Turn on VPC Flow Logs to monitor the network traffic in and out of your VPCs.
+
+2. Reconfigure the Application Load Balancer:
+ remediate the vulnerability:  Application Load Balancer should be configured to redirect all HTTP requests to HTTPS
+
+3. Default Security Group Settings: 
+ remediate the vulnerability: Modify the inbound, and outbound security group for every VPC to deny all allow necessary outbound traffic. build security group rules that adhere to the principle of least privilege
+
+4. EBS Encryption isn't enabled: 
+ remediate the vulnerability: enable encryption to protect data at rest

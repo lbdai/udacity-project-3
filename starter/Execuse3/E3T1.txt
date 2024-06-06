@@ -1,0 +1,8 @@
+# Describe GuardDuty findings that were detected related to the brute force attack
+- AWS GuardDuty can detect unusual or unauthorized behavior such as brute force attacks on your AWS environment
+- AWS GuardDuty findings for a brute force attack would provide details such as the attacker's IP address, the targeted resource, and other related metadata.
+# Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information.
+- AWS GuardDuty is a threat detection service that continuously monitors for malicious activity and unauthorized behavior to protect your AWS accounts and workloads. It uses integrated threat intelligence feeds, such as known malicious IP addresses, anomaly detection, and machine learning to identify unauthorized and potentially malicious activity within your AWS environment.For a brute force attack, GuardDuty could detect this based on the following sources of information:
+VPC Flow Logs: It analyzes network flow data for signs of anomalous traffic patterns, such as repeated attempts to reach specific ports on an instance.
+- CloudTrail Event Logs: It evaluates API calls for unusual patterns of activity, such as an unusual rate of failed authentication attempts.
+DNS Logs: It assesses DNS request logs to see if there are any requests to known bad domains.
